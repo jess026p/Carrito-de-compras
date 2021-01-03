@@ -10,6 +10,18 @@ const routes: Routes = [
   {
     path: 'asistente',
     loadChildren: () => import('./asistente/asistente.module').then( m => m.AsistentePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registrar',
+    loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },
+  {
+    path: 'comenzar-compra',
+    loadChildren: () => import('./comenzar-compra/comenzar-compra.module').then( m => m.ComenzarCompraPageModule)
   }
 ];
 
