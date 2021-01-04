@@ -8,5 +8,18 @@
 </ion-header>
 
 <ion-content>
+    <div>
+        <h2>
+            Bienvenido a nuestro Asistente de compras
+        </h2>
 
+    </div>
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+
+        <ion-fab-button (click)="abrirCarrito()" #cart>
+            <ion-icon name="cart" class="cart-icon"></ion-icon>
+
+
+        </ion-fab-button>
+    </ion-fab>
 </ion-content>
