@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'comenzar-compra',
     loadChildren: () => import('./comenzar-compra/comenzar-compra.module').then( m => m.ComenzarCompraPageModule)
+  },
+  {
+    path: 'c',
+    loadChildren: () => import('./c/c.module').then( m => m.CPageModule)
   }
 ];
 

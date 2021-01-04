@@ -15,7 +15,7 @@ export class LoginPage  {
   login() {
     console.log("Username:"+ this.username)
     console.log("Password"+ this.password)
-    this.router.navigate(['/comenzar-compra']);
+    this.router.navigate(['/c']);
   }
 goRegistre(){
   this.router.navigate(['/registrar']);
