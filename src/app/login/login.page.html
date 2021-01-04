@@ -1,9 +1,21 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>Iniciar Secion</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/asistente"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content paddig>
+    <ion-list>
+        <ion-item>
+            <ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button full (click)="login() ">Log in</button>
+    <button ion-button full color="light " (click)="goRegistre() "> Registrate</button>
 </ion-content>

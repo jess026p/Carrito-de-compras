@@ -22,7 +22,7 @@ export class AsistentePage  {
     this.router.navigate(['/comenzar-compra']);
   }
   navigateToasistente4(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/tab1']);
   }
   
 }
