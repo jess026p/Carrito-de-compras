@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'c',
     loadChildren: () => import('./c/c.module').then( m => m.CPageModule)
-  }
+  },
+  
 ];
 
 @NgModule({
